@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicClean - Клининговые услуги</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>MagicClean</h1>
+        <p>Чистота без усилий — профессиональные клининговые услуги и химчистка</p>
+        <button class="cta">Заказать услугу</button>
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <div class="service-item">
+                <h3>Уборка квартир и домов</h3>
+                <p>Качественная уборка любой сложности для вашего комфорта.</p>
+            </div>
+            <div class="service-item">
+                <h3>Химчистка мягкой мебели</h3>
+                <p>Удаляем пятна и неприятные запахи с мягкой мебели.</p>
+            </div>
+            <div class="service-item">
+                <h3>Уборка после ремонта</h3>
+                <p>Профессиональная уборка строительной пыли и загрязнений.</p>
+            </div>
+            <div class="service-item">
+                <h3>Мытьё окон и фасадов</h3>
+                <p>Кристальная чистота ваших окон и фасадов.</p>
+            </div>
+        </section>
+
+        <section class="calculator">
+            <h2>Рассчитайте стоимость</h2>
+            <label>
+                Площадь помещения (м²):
+                <input type="number" id="area" placeholder="Введите площадь">
+            </label>
+            <label>
+                Тип услуги:
+                <select id="service">
+                    <option value="cleaning">Уборка</option>
+                    <option value="dry_cleaning">Химчистка</option>
+                    <option value="post_renovation">Уборка после ремонта</option>
+                </select>
+            </label>
+            <button onclick="calculatePrice()">Рассчитать</button>
+            <p class="result" id="result"></p>
+        </section>
+
+        <section class="pricing">
+            <h2>Прайс-лист</h2>
+            <ul>
+                <li>Уборка квартиры — от 1000 руб.</li>
+                <li>Химчистка мягкой мебели — от 1500 руб.</li>
+                <li>Уборка после ремонта — от 2500 руб.</li>
+                <li>Мытьё окон — от 500 руб.</li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <h2>Отзывы наших клиентов</h2>
+            <p>"Очень довольны работой MagicClean! Всё идеально чисто." — Ольга, Кемерово</p>
+            <p>"Мебель как новая после химчистки, спасибо!" — Иван, Кемерово</p>
+        </section>
+
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <form class="form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <textarea placeholder="Ваше сообщение" rows="4"></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MagicClean. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
